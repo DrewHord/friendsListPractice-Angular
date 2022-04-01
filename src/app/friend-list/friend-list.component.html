@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th [ngClass]="tblHdStyle">Id</th>
+            <th [ngClass]="tblHdStyle">Name</th>
+            <th [ngClass]="tblHdStyle">Years</th>
+            <th [ngClass]="tblHdStyle">Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of friends">
+            <td>{{f.id}}</td>
+            <td>{{f.name}}</td>
+            <td>{{f.years}}</td>
+            <td>{{f.active}}</td>
+        </tr>
+    </tbody>
+</table>
